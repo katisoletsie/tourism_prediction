@@ -14,6 +14,8 @@ import mlflow
 mlflow.set_tracking_uri("http://localhost:5000")   # complete the code to set the MLflow tracking URI
 mlflow.set_experiment("TourismPackagePrediction")     # complete the code to set the MLflow experiment name (same as the dev experimentation cell)
 
+api = HfApi()
+
 Xtrain_path = "hf://datasets/katisoletsie/TourismPackagePrediction/Xtrain.csv"
 Xtest_path = "hf://datasets/katisoletsie/TourismPackagePrediction/Xtest.csv"
 ytrain_path = "hf://datasets/katisoletsie/TourismPackagePrediction/ytrain.csv"
